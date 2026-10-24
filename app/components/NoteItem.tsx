@@ -20,17 +20,15 @@ export default function NoteItem({
 }: NoteItemProps) {
   return (
     <article className="note-card">
+      <span className="note-card-orbit" aria-hidden="true">✧</span>
+      <h3>{note.title}</h3>
       <button
         aria-label={`View ${note.title}`}
         className="note-open"
         onClick={() => onView(note)}
         type="button"
       >
-        <span className="note-card-orbit" aria-hidden="true">
-          <span />
-        </span>
-        <h3>{note.title}</h3>
-        <p>{note.content}</p>
+        <span className="note-preview">{note.content}</span>
         <span className="note-date">
           Updated{" "}
           {new Intl.DateTimeFormat("en", {

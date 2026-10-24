@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Galactic Notes",
-  description: "A quiet corner of the cosmos for all your thoughts.",
+  description: "Your thoughts, beyond the stars.",
 };
 
 export default function RootLayout({
